@@ -1,0 +1,58 @@
+html {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  height: 100vh;
+}
+#root,
+#root > div {
+  height: 100%;
+}
+.App {
+  height: 100%;
+  width: 100%;
+}
+.Pokecards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.Pokecard-itm {
+  margin: 0.8em;
+  padding: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #506fa9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+}
+.Pokecard-img {
+  transform: scale(1);
+  transition: transform 400ms ease-in-out;
+}
+.Pokecard-itm:hover .Pokecard-img {
+  transform: scale(1.1);
+}
+
+.Pokecard-name {
+  font-size: 1.4rem;
+}
+.Pokecard-type,
+.Pokecard-exp {
+  font-size: 1.2rem;
+}
+.winner-text {
+  color: green;
+  font-size: 1.8rem;
+}
+.winner-text > span {
+  font-size: 3rem;
+}
